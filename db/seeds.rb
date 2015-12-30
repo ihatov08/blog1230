@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+100.times do |index|
+  Post.create(title: "タイトル#{index}", body: "ブログの内容#{index}", category: "カテゴリー#{index}")
+end
